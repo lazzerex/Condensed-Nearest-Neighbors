@@ -24,3 +24,9 @@ Demo cho bài toán rút gọn tập huấn luyện trên bộ dữ liệu Shutt
 - `Output/cnn_label_distribution.png`: biểu đồ phân bố nhãn
 - `Output/cnn_numeric_corr.png`: ma trận tương quan các đặc trưng
 - `Output/cnn_comparison_summary.csv`: bảng tổng hợp so sánh kết quả
+
+## Kết luận
+- Về mặt lý thuyết, CNN giúp giảm kích thước tập train, từ đó giảm thời gian dự đoán của kNN.
+- Prediction time tăng nhẹ, có thể do CNN chọn lọc các điểm ở gần biên quyết định, khó tính toán, đo thời gian hiện tại chỉ chạy một lần, có thể chọn chiến lược tìm láng giềng khác cho KNN.
+- Chất lượng phân loại có thể giảm nhẹ hoặc tương đương tùy cấu hình và dữ liệu.
+- Cần cân nhắc lựa chọn kNN và tham số k phù hợp.
