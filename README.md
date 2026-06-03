@@ -27,6 +27,6 @@ Demo cho bài toán rút gọn tập huấn luyện trên bộ dữ liệu Shutt
 
 ## Kết luận
 - Về mặt lý thuyết, CNN giúp giảm kích thước tập train, từ đó giảm thời gian dự đoán của kNN.
-- Prediction time tăng nhẹ, có thể do CNN chọn lọc các điểm ở gần biên quyết định, khó tính toán, đo thời gian hiện tại chỉ chạy một lần, có thể chọn chiến lược tìm láng giềng khác cho KNN.
+- Prediction time tăng khi dùng thuật toán mặc định của KNeighborsClassifier, vì CNN chọn lọc các điểm ở biên quyết định tạo ra phân bố không gian không đồng đều, có thể gây ảnh hưởng đến thuật toán tìm kiếm. Thực nghiệm với brute force cho thấy CNN cho pred time nhanh hơn baseline, đúng với lý thuyết. Kết quả được đo trung bình trên 10 lần chạy để đảm bảo độ tin cậy.
 - Chất lượng phân loại có thể giảm nhẹ hoặc tương đương tùy cấu hình và dữ liệu.
 - Cần cân nhắc lựa chọn kNN và tham số k phù hợp.
